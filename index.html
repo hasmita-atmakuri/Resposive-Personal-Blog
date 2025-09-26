@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Bloggers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="border-bottom bg-white">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand fw-bold" href="index.html">Just Bloggers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new-post.html">New Post</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div id="alertArea"></div>
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <section id="posts" class="row g-4">
+                    <!-- Dynamic posts will be injected here -->
+                </section>
+            </div>
+            <aside class="col-lg-4">
+                <div class="card sticky-top" style="top: 88px;">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/96" alt="Author" class="rounded-circle me-3" width="64" height="64">
+                            <div>
+                                <h5 class="card-title mb-0">About the Author</h5>
+                                <small class="text-muted">Web Developer & Writer</small>
+                            </div>
+                        </div>
+                        <p class="card-text">I share insights on web development, design, and productivity. Subscribe to stay updated!</p>
+                        <div class="d-flex gap-2">
+                            <a class="btn btn-outline-dark btn-sm" href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+                            <a class="btn btn-outline-dark btn-sm" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                            <a class="btn btn-outline-dark btn-sm" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="py-4 border-top bg-white">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+            <span class="text-muted">© <span id="year"></span> Just Bloggers</span>
+        </div>
+    </footer>
+
+    <!-- Post Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Post title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="postModalImage" class="img-fluid rounded mb-3" alt="Post image">
+                    <div class="text-muted mb-3" id="postMeta"></div>
+                    <div id="postContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

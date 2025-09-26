@@ -1,0 +1,66 @@
+[
+  {
+    "id": "getting-started-web-dev",
+    "title": "Getting Started with Web Development",
+    "date": "2025-09-20",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1600&auto=format&fit=crop",
+    "summary": "A friendly introduction to HTML, CSS, and JavaScript for beginners.",
+    "content": "<p>Web development is a rewarding journey. In this post, we will cover the basics: how the web works, HTML for structure, CSS for style, and JavaScript for interactivity.</p><p>Start small. Build a simple page, style it with CSS, and add small scripts. Practice by recreating UI components you like. Over time, patterns and best practices will become second nature.</p><p>Resources: MDN Web Docs, CSS Tricks, and freeCodeCamp are fantastic places to continue learning.</p>"
+  },
+  {
+    "id": "responsive-design-tips",
+    "title": "Responsive Design Tips You Can Use Today",
+    "date": "2025-09-22",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Make your sites look great on any device using flexbox and grid.",
+    "content": "<p>Responsive design ensures your site looks great across phones, tablets, and desktops. Use fluid layouts, relative units, and media queries to adapt.</p><p>Start with a mobile-first approach: define base styles for small screens, then enhance for larger screens using min-width breakpoints.</p><p>Use tools like CSS Grid for page layout and Flexbox for components. Test across multiple devices and emulate different viewports in your browser.</p>"
+  },
+  {
+    "id": "productivity-for-developers",
+    "title": "Productivity for Developers: Small Habits, Big Results",
+    "date": "2025-09-24",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Simple routines to stay focused and ship consistently.",
+    "content": "<p>Productivity is less about intensity and more about consistency. Set clear goals, reduce context switching, and create a distraction-free environment.</p><p>Adopt time blocks for deep work, keep a short daily plan, and track progress weekly. Automate repetitive tasks and use keyboard shortcuts to save time.</p><p>Remember to rest. Breaks help you think better and prevent burnout.</p>"
+  },
+  {
+    "id": "css-grid-layout-guide",
+    "title": "A Practical Guide to CSS Grid Layout",
+    "date": "2025-09-25",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Learn how to build responsive layouts quickly with CSS Grid.",
+    "content": "<p>CSS Grid is a two‑dimensional system that makes complex layouts straightforward. Define containers with <code>display: grid</code>, set columns/rows with <code>grid-template</code>, and place items using grid lines.</p><p>Start with simple 2‑column layouts and practice auto‑fit/auto‑fill for responsive grids.</p>"
+  },
+  {
+    "id": "javascript-async-await",
+    "title": "Mastering Async/Await in JavaScript",
+    "date": "2025-09-26",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Write cleaner asynchronous code with async/await and proper error handling.",
+    "content": "<p>Async/await is syntactic sugar over Promises. Mark functions as <code>async</code> and use <code>await</code> to pause until a Promise settles.</p><p>Always wrap awaits in try/catch or handle rejections to avoid unhandled errors.</p>"
+  },
+  {
+    "id": "bootstrap-utilities",
+    "title": "Favorite Bootstrap Utilities for Faster UI",
+    "date": "2025-09-26",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Spacing, display, and flex utilities that speed up prototyping.",
+    "content": "<p>Bootstrap's utility classes let you build layouts without custom CSS. Learn spacing (<code>m-*</code>, <code>p-*</code>), display (<code>d-*</code>), and flex (<code>flex-*</code>) utilities to move faster.</p>"
+  },
+  {
+    "id": "web-accessibility-checklist",
+    "title": "A Quick Accessibility Checklist for Your Next Project",
+    "date": "2025-09-26",
+    "author": "Hasmita",
+    "image": "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=1600&auto=format&fit=crop",
+    "summary": "Simple steps to make your site usable for everyone.",
+    "content": "<p>Ensure sufficient color contrast, keyboard navigability, focus states, alt text for images, and semantic HTML. Test with screen readers and use automated tools like Lighthouse for quick checks.</p>"
+  }
+]
+
