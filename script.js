@@ -1,4 +1,3 @@
-// Set current year in footer
 document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -9,16 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadPosts() {
   try {
-    // Try fetching from posts.json; fallback to local array if blocked by file protocol
     const response = await fetch('posts.json');
     if (!response.ok) throw new Error('Failed to load posts.json');
     const remote = await response.json();
-    // Merge with user-created posts from localStorage
     const local = readLocalPosts();
     const merged = [...local, ...remote];
     return sortPostsByDateDesc(merged);
   } catch (err) {
-    // Fallback local data
     const fallback = [
       {
         id: 'fallback-post',
@@ -47,7 +43,6 @@ async function renderPosts() {
 
   container.innerHTML = posts.map(post => postCardHtml(post)).join('');
 
-  // Wire up read more buttons
   posts.forEach(post => {
     const btn = document.querySelector(`[data-read="${post.id}"]`);
     if (btn) btn.addEventListener('click', () => openPostModal(post));
